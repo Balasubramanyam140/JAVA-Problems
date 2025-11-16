@@ -7,19 +7,27 @@
                 String str = "Banana";
                 
                 str = str.toLowerCase();
-                
+
+                //As alphabets were 26 creating an array with that size
                 int[] freq = new int[26];
+
+                //now using this freq array incrementing that array index value by 1
                 
                 for(int i=0;i<str.length(); i++){
                     char ch = str.charAt(i);
                     if(ch >= 'a' && ch <= 'z'){
-                        freq[ch-'a']++;
+                         // because any ASCII values starts from a-97, b-98, c-99, d-100, ....... so to get that particular value 
+                         // if ch =a then now we have to increase 0th index so to achieve that we can write 0 - 'a' 
+                         //0,1,2,3,4,5,6,7,8.................
+                         //a,b,c,d,e,f,g,h,i,.............
+                         freq[ch - 'a']++;      
                     }
                 }
                 
                 for(int i=0;i<freq.length;i++){
                     if(freq[i] > 0){
-                        System.out.println((char)(i+'a') + " is " + freq[i] + " times" );            }
+                        System.out.println((char)(i+'a') + " is " + freq[i] + " times" );            
+                    }
                 }
             }
         }
