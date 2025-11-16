@@ -1,5 +1,5 @@
 1) Using Array
-
+2) Using StringBuilder
 
 1) Using Array
 
@@ -44,3 +44,64 @@
                 Reverse Order :
                 ulaB
 ________________________________________________________________________________________________
+
+2) Using StringBuilder
+          import java.util.Scanner;
+          class Main{
+              public static void main(String[] args){
+                  Scanner sc = new Scanner(System.in);
+                  System.out.println("Enter a String :");
+                  String a = sc.nextLine();
+                  StringBuilder rev = new StringBuilder(a);
+                  rev.reverse();
+                  String b = rev.toString();
+                  System.out.println("Original String : "+ a);
+                  System.out.println("Reverse String : "+ rev);
+              }
+          }
+
+          OUTPUT :
+                    Enter a String :
+                    Hi Balu Goood MOrning
+                    Original String : Hi Balu Goood MOrning
+                    Reverse String : gninrOM doooG ulaB iH
+_______________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
